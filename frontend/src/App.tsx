@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Organizations from './pages/Organizations';
 import Users from './pages/Users';
+import Datasets from './pages/Datasets';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Dashboard />} />
         <Route path='/organizations' element={<Organizations />} />
         <Route path='/users' element={<Users />} />
+        <Route path='/datasets' element={<Datasets />} />
       </Routes>
     </BrowserRouter>
   );
