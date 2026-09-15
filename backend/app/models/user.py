@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
+from sqlalchemy.orm import relationship
 from app.core.database import Base
 
 class User(Base):
@@ -8,3 +9,5 @@ class User(Base):
     hashed_password = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
     is_superuser = Column(Boolean, default=False)
+    organization_id = Column(Integer, ForeignKey('organizations.id'))
+    organization = relationship('Organization', back_populates='users')
