@@ -25,3 +25,23 @@ def run_query(query: AnalyticsQuery, db: Session = Depends(get_db)):
         return result_df.to_dict(orient='records')
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@router.get('/dashboard')
+def get_dashboard_data(db: Session = Depends(get_db)):
+    datasets_count = db.query(Dataset).count()
+    return {
+        "kpis": [
+            {"title": "Total Datasets", "val": str(datasets_count), "pct": "+12%", "up": True},
+            {"title": "Total Pipelines", "val": "8", "pct": "+5%", "up": True},
+            {"title": "Total Reports", "val": "15", "pct": "+2.1%", "up": True},
+            {"title": "Data Quality", "val": "98.5%", "pct": "+0.5%", "up": True},
+        ],
+        "revenueTrend": [
+            {"name": "Jan", "value": 12}, {"name": "Feb", "value": 15},
+            {"name": "Mar", "value": 14}, {"name": "Apr", "value": 20},
+            {"name": "May", "value": 18}, {"name": "Jun", "value": 25},
+            {"name": "Jul", "value": 22}, {"name": "Aug", "value": 30},
+            {"name": "Sep", "value": 28}, {"name": "Oct", "value": 35},
+            {"name": "Nov", "value": 34}, {"name": "Dec", "value": 40}
+        ]
+    }

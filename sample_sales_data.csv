@@ -1,0 +1,16 @@
+id,date,region,category,product,quantity,unit_price,revenue,discount,customer_segment
+1,2024-01-15,North,Technology,Server Blade A1,2,2500.00,5000.00,0.05,Enterprise
+2,2024-01-16,South,Office Supplies,Ergonomic Chair,5,150.00,750.00,0.10,SMB
+3,2024-01-16,East,Software,Cloud Storage 1TB,10,12.99,129.90,0.00,Consumer
+4,2024-01-17,West,Technology,Network Switch X,1,850.00,850.00,0.00,Enterprise
+5,2024-01-18,North,Furniture,Standing Desk,3,450.00,1350.00,0.15,SMB
+6,2024-01-18,North,Software,Security Suite Pro,1,1200.00,1200.00,0.05,Enterprise
+7,2024-01-19,South,Office Supplies,Whiteboard,2,85.00,170.00,0.00,Consumer
+8,2024-01-20,East,Technology,Server Blade A1,1,2500.00,2500.00,0.00,SMB
+9,2024-01-21,West,Software,Data Analytics License,5,299.00,1495.00,0.10,Enterprise
+10,2024-01-22,South,Furniture,Office Sofa,1,600.00,600.00,0.20,SMB
+11,2024-01-23,East,Technology,Laptop Pro 15,4,1800.00,7200.00,0.05,Enterprise
+12,2024-01-24,West,Office Supplies,Printer Paper Box,20,25.00,500.00,0.00,SMB
+13,2024-01-25,North,Technology,Wireless Router,8,120.00,960.00,0.10,Consumer
+14,2024-01-26,South,Software,Cloud Storage 1TB,25,12.99,324.75,0.00,Enterprise
+15,2024-01-27,East,Furniture,Standing Desk,2,450.00,900.00,0.05,Consumer
