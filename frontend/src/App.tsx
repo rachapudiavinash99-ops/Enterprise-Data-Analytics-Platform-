@@ -7,6 +7,8 @@ import Users from './pages/Users';
 import Datasets from './pages/Datasets';
 import DataQuality from './pages/DataQuality';
 import Pipelines from './pages/Pipelines';
+import Analytics from './pages/Analytics';
+import Dashboards from './pages/Dashboards';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/datasets' element={<Datasets />} />
         <Route path='/quality' element={<DataQuality />} />
         <Route path='/pipelines' element={<Pipelines />} />
+        <Route path='/analytics' element={<Analytics />} />
+        <Route path='/dashboards' element={<Dashboards />} />
       </Routes>
     </BrowserRouter>
   );
